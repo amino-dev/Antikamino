@@ -1,0 +1,55 @@
+/*----------------------------------------*/
+/* Acceuil page
+/*----------------------------------------*/
+
+.top img{
+  height: 20rem;
+}
+
+.top h1{
+  position: relative;
+  bottom: 12rem;
+  z-index: 1;
+  color: white;
+}
+
+.card-img-top{
+    height: 20rem;
+}
+
+.feedbakcs-section .container{
+border: 1px solid gray;
+}
+
+.customer{
+  width: 20%;
+  height: 20%;
+  clip-path: circle(42% at 50% 50%);
+}
+
+
+/*----------------------------------------*/
+/* footer
+/*----------------------------------------*/
+
+footer {
+  background-color: black;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-widget {
+  color: white;
+}
+
+.footer-link:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+
+
+
