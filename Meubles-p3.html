@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antikamino</title>
+
+    	<!-- Stylesheets -->
+  
+
+	<link rel="stylesheet" href="css/flaticon.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
+  <link rel="stylesheet" href="css/slicknav.min.css"/>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/> 
+  
+
+	<!-- Main Stylesheets -->
+    <link rel="stylesheet" href="css/style.css"/>
+
+</head>
+<body>
+
+        <!-- Header section start -->
+<header>
+        <div class="container-fluid">
+            <!---------------------------NavBar-------------------------------------->
+            <nav class="navbar navbar-expand-lg navbar-light " id="nav-f">
+               <a class="navbar-brand" href="#">
+          <img src="img/Logo/Antika-Logo-1.png" width="150rem" height="auto" alt="">
+        </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link ml-3" href="Acceuil.html">Acceuil
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+          <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle ml-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Nos produits
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="Arts-décoratifs-p1.html">Arts décoratifs</a>
+          <a class="dropdown-item" href="Anciens-bijoux-p1.html">Anciens bijoux</a>
+          <a class="dropdown-item" href="Meubles-p1.html">Meubles</a>
+          <a class="dropdown-item" href="Scluptures-p1.html">Scluptures</a>
+        </div>
+      </li>
+        <li class="nav-item">
+          <a class="nav-link ml-3"  href="Contact.html">Contact</a>
+        </li>
+      </ul>
+    
+       
+    <!-- search button -->
+   <div class="col-md-3 col-9">
+            <form class="navbar-form" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Rechercher">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>           
+                
+                  <!-- login button -->
+              <div >
+                   <button class="btn btn-success ml-3  mt-1" data-toggle="modal" data-target="#exampleModal">Se connecter</button>
+
+                 <!-- login modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+              <!-- Default form login -->
+<form class="text-center border border-light p-5" action="#!">
+
+    <p class="h4 mb-4">Se connecter</p>
+
+    <!-- Email -->
+    <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+    <!-- Password -->
+    <input type="password" id="defaultLoginFormPassword" required class="form-control mb-4" placeholder="Mot de passe">
+    
+
+    <div class="d-flex justify-content-around">
+        <div>
+            <!-- Remember me -->
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                <label class="custom-control-label" for="defaultLoginFormRemember">Souviens moi</label>
+            </div>
+        </div>
+        <div>
+            <!-- Forgot password -->
+            <a href="">Mot de passe oublié?</a>
+        </div>
+    </div>
+
+    <!-- Sign in modal button -->
+    <button class="btn btn-info btn-block my-4" type="submit">Se connecter</button>
+
+    <!-- Register -->
+    <p>Pas un membre?
+        <a href="">S'inscrire</a>
+    </p>
+
+
+</form>
+<!-- Default form login --></div> 
+  </div>
+</div>
+ <!-- sign up button-->
+   <button class="btn btn-danger ml-3 mt-1" data-toggle="modal" data-target="#exampleModal1">Inscription</button>
+        
+     <!-- Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+         
+          <!-- Default form register -->
+<form class="text-center border border-light p-5" action="#!">
+
+    <p class="h4 mb-4">Inscription</p>
+
+    <div class="form-row mb-4">
+        <div class="col">
+            <!-- First name -->
+            <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Prénom">
+        </div>
+        <div class="col">
+            <!-- Last name -->
+            <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Nom">
+        </div>
+    </div>
+
+    <!-- E-mail -->
+    <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+    <!-- Password -->
+    <input type="password" id="defaultRegisterFormPassword" required class="form-control" placeholder="Mot de passe" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+    
+
+     <!-- Confirm password -->
+    <input type="password" id="defaultConfirmFormPassword" required class="form-control mt-4 mb-4" placeholder="Confirmer mot de passe" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+     
+
+    <!-- Phone number -->
+    <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Numéro de téléphone" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+   
+
+  
+
+    <!-- Sign up modal button -->
+    <button class="btn btn-info my-4 btn-block" type="submit">S'inscrire</button>
+
+    <hr>
+
+  </form>
+ </div>
+ </div> 
+  </div>
+</div>     
+</div>
+                </div>
+                </ul> 
+              </nav>
+            </div>
+        </div>
+        
+    </header>
+
+    <!-- header page end -->
+
+    <!-- side bar start -->
+
+    
+    <div class="container col-md-12 mb-5">
+      <div class="row">
+        <div class="col-md-3 col-12">
+          <div class="card">
+            <div class="card-body">
+             <h2 class="text-center mb-5">Filtrer par</h2>
+             <h4 class="mb-4">Objet</h4>
+             <dl>
+               <dd>
+                <div class="custom-control custom-checkbox mb-5">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">Chaises</label>
+                </div>
+               </dd>
+               <dd>
+                <div class="custom-control custom-checkbox mb-5">
+                  <input type="checkbox" class="custom-control-input" id="customCheck2">
+                  <label class="custom-control-label" for="customCheck2">Tables</label>
+                </div>
+               </dd>
+               <dd>
+                <div class="custom-control custom-checkbox mb-5">
+                  <input type="checkbox" class="custom-control-input" id="customCheck3">
+                  <label class="custom-control-label" for="customCheck3">Commodes</label>
+                </div>
+               </dd>
+               <dd>
+                <div class="custom-control custom-checkbox mb-5">
+                  <input type="checkbox" class="custom-control-input" id="customCheck4">
+                  <label class="custom-control-label" for="customCheck4">Buffets</label>
+                </div>
+               </dd>
+               <dd>
+                <div class="custom-control custom-checkbox mb-5">
+                  <input type="checkbox" class="custom-control-input" id="customCheck4">
+                  <label class="custom-control-label" for="customCheck4">Salons</label>
+                </div>
+               </dd>
+               <dd>
+                <div class="custom-control custom-checkbox mb-5">
+                  <input type="checkbox" class="custom-control-input" id="customCheck4">
+                  <label class="custom-control-label" for="customCheck4">Montres</label>
+                </div>
+               </dd>
+             </dl>
+             <h4 class="mb-4">Prix</h4>
+             <dl>
+               <dd>
+               <div class="custom-control custom-radio mb-5">
+                  <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+                  <label class="custom-control-label" for="defaultUnchecked">Moins de 500 DT</label>
+               </div>
+               </dd>
+               <dd>
+               <div class="custom-control custom-radio mb-5">
+                  <input type="radio" class="custom-control-input" id="defaultUnchecked1" name="defaultExampleRadios">
+                  <label class="custom-control-label" for="defaultUnchecked1">Entre 500 et 1000 DT</label>
+               </div>
+               </dd>
+               <dd>
+               <div class="custom-control custom-radio mb-5">
+                  <input type="radio" class="custom-control-input" id="defaultUnchecked2" name="defaultExampleRadios">
+                  <label class="custom-control-label" for="defaultUnchecked2">Plus que 1000 DT</label>
+               </div>
+               </dd>
+             </dl>
+            </div>
+          </div>
+        </div>
+        <!-- side bar end -->
+
+        <!--  Filtre top end -->
+        <div class="col-md-9">
+          <h2 class="py-4 ml-3">Meubles</h2>
+              <div class="container col-md-11 col-11 border pt-3 mb-3 ">
+                <div class="row ">
+                  <div class="col-md-6 col-12">
+                    <form>
+                      <div class="form-inline mb-3">
+                       <label for="exampleFormControlSelect1">Montrer</label>
+                         <select class="form-control col-2 ml-3 mr-3" id="exampleFormControlSelect1">
+                          <option>6</option>
+                          <option>12</option>
+                          <option>24</option>
+                         </select>
+                        <label for="exampleFormControlSelect1">par page</label>
+                     </div>
+                    </form>
+                  </div>
+                  <div class="col-md-6 col-12 d-flex justify-content-end">
+                    <form>
+                      <div class="form-inline  mb-3">
+                       <label for="exampleFormControlSelect1">Tri</label>
+                         <select class="form-control ml-4 col-md-9 col-9" id="exampleFormControlSelect1">
+                          <option>Le moins cher</option>
+                          <option>Le plus cher</option>
+                          <option>De A à Z</option>
+                          <option>De Z à A</option>
+                          <option>En stock</option>
+                         </select>
+                     </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+      
+       <!--  Filtre top end -->
+
+       <!--  Pagination top start -->
+       <nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item ">
+     <a class="page-link" href="Meubles-p2.html">Précédent</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="Meubles-p1.html">1</a></li>
+    <li class="page-item "><a class="page-link" href="Meubles-p2.html">2</a></li>
+    <li class="page-item active"><a class="page-link" href="Meubles-p3.html">3</a></li>
+    <li class="page-item disabled">
+      <a class="page-link" href="">Suivant</a>
+    </li>
+  </ul>
+</nav>
+  <!--  Pagination top end -->
+                   <!-- products content start -->
+              <div class="container py-3">
+                <div class="card">
+                  <div class="row ">
+                    <div class="col-md-4">
+                      <img src="img/Arts décoratifs/Boites musicales/Boite8.jpeg" class="w-100">
+                    </div>
+                    <div class="col-md-8 px-3">
+                      <div class="card-block px-3">
+                        <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
+                        <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="mb-2">
+                          <u>Prix</u>
+                        </div>
+                          <div class="d-flex justify-content-center">
+                              <a href="#" class="btn btn-primary mb-3">Commander</a>
+                           </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                 <div class="card my-4">
+                  <div class="row ">
+                    <div class="col-md-4">
+                      <img src="img/Arts décoratifs/Téléphones/tel.jpeg" class="w-100">
+                    </div>
+                    <div class="col-md-8 px-3">
+                      <div class="card-block px-3">
+                        <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
+                        <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="mb-2">
+                          <u>Prix</u>
+                        </div>
+                         <div class="d-flex justify-content-center">
+                              <a href="#" class="btn btn-primary mb-3">Commander</a>
+                           </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <div class="card my-4">
+                  <div class="row ">
+                    <div class="col-md-4">
+                      <img src="img/Arts décoratifs/Boites musicales/Boite-à-bijoux-musicale-phonographe-antique-1.jpg" class="w-100">
+                    </div>
+                    <div class="col-md-8 px-3">
+                      <div class="card-block px-3">
+                        <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
+                        <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="mb-2">
+                          <u>Prix</u>
+                        </div>
+                          <div class="d-flex justify-content-center">
+                              <a href="#" class="btn btn-primary mb-3">Commander</a>
+                           </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                 <div class="card my-4">
+                  <div class="row ">
+                    <div class="col-md-4">
+                      <img src="img/Arts décoratifs/Amploules/Ampoule.jpeg" class="w-100">
+                    </div>
+                    <div class="col-md-8 px-3">
+                      <div class="card-block px-3">
+                        <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
+                        <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="mb-2">
+                          <u>Prix</u>
+                        </div>
+                         <div class="d-flex justify-content-center">
+                              <a href="#" class="btn btn-primary mb-3">Commander</a>
+                           </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                 <div class="card my-4">
+                  <div class="row ">
+                    <div class="col-md-4">
+                      <img src="img/Arts décoratifs/Tableaux/tab11.jpeg" class="w-100">
+                    </div>
+                    <div class="col-md-8 px-3">
+                      <div class="card-block px-3">
+                        <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
+                        <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="mb-2">
+                          <u>Prix</u>
+                        </div>
+                         <div class="d-flex justify-content-center">
+                              <a href="#" class="btn btn-primary mb-3">Commander</a>
+                           </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                 <div class="card my-4">
+                  <div class="row ">
+                    <div class="col-md-4">
+                      <img src="img/Arts décoratifs/Amploules/Ampoule2.jpg" class="w-100">
+                    </div>
+                    <div class="col-md-8 px-3">
+                      <div class="card-block px-3">
+                        <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
+                        <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="mb-2">
+                          <u>Prix</u>
+                        </div>
+                         <div class="d-flex justify-content-center">
+                              <a href="#" class="btn btn-primary mb-3">Commander</a>
+                           </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        </div>
+      </div>
+    </div>
+      <!-- Products content end -->
+    
+      <!--  Pagination bottom start -->
+         <div class="container">
+   <div class="col-md-9 d-flex justify-content-end">
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item ">
+         <a class="page-link" href="Meubles-p2.html">Précédent</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="Meubles-p1.html">1</a></li>
+        <li class="page-item "><a class="page-link" href="Meubles-p2.html">2</a></li>
+        <li class="page-item active"><a class="page-link" href="Meubles-p3.html">3</a></li>
+        <li class="page-item disabled">
+          <a class="page-link" href="">Suivant</a>
+        </li>
+      </ul>
+    </nav>
+</div>
+         </div>
+         
+     <!--  Pagination bottom end -->
+
+    
+
+
+    
+
+    <!-- Footer section -->
+<footer class="footer-section mt-5">
+  <div class="container-fluid w-100">
+      <div class="row">
+          <div class="col-md-3">
+              <div class="footer-widget">
+                  <h3 class="footer-title mb-4">Amino Antika</h3>
+                  <div class="info-footer">
+        <p> Nous vivons dans l'ére du numérique maintenant.</p>
+        <p>Donc, Aminoo Antika vous offre l'occasion d'acheter tout ce que vous voulez sans se dépalcer sur place.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2">
+
+  </div>
+          <div class="col-md-3">
+    <div class="footer-widget">
+      <h3 class="footer-title mb-4">
+          Navigation
+      </h3>
+      <dl>
+          <dd><a  class="footer-link" href="Acceuil.html">Acceuil</a></dd>
+          <dd><a class="footer-link" href="Arts-décoratifs-p1.html">Arts décoratifs</a></dd>
+          <dd><a class="footer-link" href="Anciens-bijoux-p1.html">Anciens bijoux</a></dd>
+          <dd><a class="footer-link" href="Meubles-p1.html">Meubles</a></dd>
+          <dd><a class="footer-link" href="Scluptures-p1.html">Scluptures</a></dd>
+          <dd><a class="footer-link" href="contact.html">Contact</a></dd>
+      </dl>
+  </div>
+  </div>
+  
+          <div class="col-md-4">
+              <div class="footer-widget">
+                  <h3 class="footer-title mb-4">Informations de contact</h3>
+                  <dl class="info-footer">
+                      <dd>
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-md-6 col-5">
+                              <i class="fa fa-phone"></i>
+                              <span class="footer-tool">Tél</span>
+                            </div>
+                            <div class="col-md-6 col-7">
+                              <span class="footer-contact">22.917.360</span>
+                            </div>
+                          </div>
+                        </div>
+                      </dd>
+                      <dd>
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-md-6 col-5">
+                              <i class="fa fa-envelope"></i>
+                              <span class="footer-tool">Email</span>
+                            </div>
+                            <div class="col-md-6 col-7">
+                              <span class="footer-contact">samet.amine@yahoo.fr</span>
+                            </div>
+                          </div>
+                        </div>
+                      </dd>
+                      <dd>
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-md-6 col-5">
+                              <i class="fa fa-map-marker"></i>
+                          <span class="footer-tool" >Adresse</span>
+                            </div>
+                            <div class="col-md-6 col-7">
+                               
+                          <span class="footer-contact">Sfax (Tunisie)</span>
+                            </div>
+                          </div>
+                        </div>
+                      </dd>
+                  </dl>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="container">
+    <div class="row d-flex justify-content-around">
+      <a href="https://fr-fr.facebook.com/" target="_blank"><i class="fab fa-facebook social-icon"></i></a>
+      <a href="https://www.instagram.com/?hl=fr"  target="_blank"><i class="fab fa-instagram social-icon"></i></a>			
+      <a href="https://www.twitter.com/"  target="_blank"><i class="fab fa-twitter social-icon"></i></a>
+      <a href="https://www.pinterest.com/"  target="_blank"><i class="fab fa-pinterest social-icon"></i></a>
+    </div>
+    <p class="copy-right text-center mt-5">
+      <i class="far fa-copyright" aria-hidden="true"></i> 2020 All rights reserved by Amino
+    </p>
+  </div>
+</footer>
+<!-- Footer section end -->
+   
+    	<!--====== Javascripts & Jquery ======-->
+	<script src="js/bootstrap.bundle.js"></script>
+	<script src="js/bootstrap.bundle.js.map"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js.map"></script>
+	<script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap.js.map"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.min.js.map"></script>
+   
+    <!-- jQuery and JS bundle w/ Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+  <script>
+    var defaultRegisterFormPassword = document.getElementById("defaultRegisterFormPassword")
+  , defaultConfirmFormPassword = document.getElementById("defaultConfirmFormPassword");
+
+  function validatePassword(){
+  if(defaultRegisterFormPassword.value != defaultConfirmFormPassword.value) {
+    defaultConfirmFormPassword.setCustomValidity("Mot de passe n'est pas identique");
+  } else {
+    defaultConfirmFormPassword.setCustomValidity('');
+  }
+}
+
+defaultRegisterFormPassword.onchange = validatePassword;
+defaultConfirmFormPassword.onkeyup = validatePassword;
+  </script>
+  
+
+</body>
+</html>
