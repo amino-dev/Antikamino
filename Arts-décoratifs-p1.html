@@ -55,120 +55,122 @@
         <li class="nav-item">
           <a class="nav-link ml-3"  href="Contact.html">Contact</a>
         </li>
-      </ul>
-    
-       
-    <!-- search button -->
-   <div class="col-md-3 col-9">
-            <form class="navbar-form" role="search">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Rechercher">
-                    <div class="input-group-btn">
-                        <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
-                    </div>
-                </div>
-            </form>
-        </div>           
-                
-                  <!-- login button -->
-              <div >
-                   <button class="btn btn-success ml-3  mt-1" data-toggle="modal" data-target="#exampleModal">Se connecter</button>
+        <li>
+     <!-- search button -->
+ <div class="col-md-3 col-9">
+  <form class="navbar-form" role="search">
+      <div class="input-group">
+          <input type="text" class="form-control" placeholder="Rechercher">
+          <div class="input-group-btn">
+              <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+          </div>
+      </div>
+  </form>
+</div>    
+        </li>
 
-                 <!-- login modal -->
+        <li>
+            <!-- login button -->
+            <div >
+              <button class="btn btn-success ml-3  mt-1" data-toggle="modal" data-target="#exampleModal">Se connecter</button>
+
+            <!-- login modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      
-              <!-- Default form login -->
+<div class="modal-dialog">
+<div class="modal-content">
+ 
+         <!-- Default form login -->
 <form class="text-center border border-light p-5" action="#!">
 
-    <p class="h4 mb-4">Se connecter</p>
+<p class="h4 mb-4">Se connecter</p>
 
-    <!-- Email -->
-    <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
+<!-- Email -->
+<input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
 
-    <!-- Password -->
-    <input type="password" id="defaultLoginFormPassword" required class="form-control mb-4" placeholder="Mot de passe">
-    
+<!-- Password -->
+<input type="password" id="defaultLoginFormPassword" required class="form-control mb-4" placeholder="Mot de passe">
 
-    <div class="d-flex justify-content-around">
-        <div>
-            <!-- Remember me -->
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
-                <label class="custom-control-label" for="defaultLoginFormRemember">Souviens moi</label>
-            </div>
-        </div>
-        <div>
-            <!-- Forgot password -->
-            <a href="">Mot de passe oublié?</a>
-        </div>
-    </div>
 
-    <!-- Sign in modal button -->
-    <button class="btn btn-info btn-block my-4" type="submit">Se connecter</button>
+<div class="d-flex justify-content-around">
+   <div>
+       <!-- Remember me -->
+       <div class="custom-control custom-checkbox">
+           <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+           <label class="custom-control-label" for="defaultLoginFormRemember">Souviens moi</label>
+       </div>
+   </div>
+   <div>
+       <!-- Forgot password -->
+       <a href="">Mot de passe oublié?</a>
+   </div>
+</div>
 
-    <!-- Register -->
-    <p>Pas un membre?
-        <a href="">S'inscrire</a>
-    </p>
+<!-- Sign in modal button -->
+<button class="btn btn-info btn-block my-4" type="submit">Se connecter</button>
+
+<!-- Register -->
+<p>Pas un membre?
+   <a href="">S'inscrire</a>
+</p>
 
 
 </form>
 <!-- Default form login --></div> 
-  </div>
 </div>
- <!-- sign up button-->
-   <button class="btn btn-danger ml-3 mt-1" data-toggle="modal" data-target="#exampleModal1">Inscription</button>
-        
-     <!-- Modal -->
+</div>
+<!-- sign up button-->
+<button class="btn btn-danger ml-3 mt-1" data-toggle="modal" data-target="#exampleModal1">Inscription</button>
+   
+<!-- Modal -->
 <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-         
-          <!-- Default form register -->
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+    
+     <!-- Default form register -->
 <form class="text-center border border-light p-5" action="#!">
 
-    <p class="h4 mb-4">Inscription</p>
+<p class="h4 mb-4">Inscription</p>
 
-    <div class="form-row mb-4">
-        <div class="col">
-            <!-- First name -->
-            <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Prénom">
-        </div>
-        <div class="col">
-            <!-- Last name -->
-            <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Nom">
-        </div>
-    </div>
+<div class="form-row mb-4">
+   <div class="col">
+       <!-- First name -->
+       <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Prénom">
+   </div>
+   <div class="col">
+       <!-- Last name -->
+       <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Nom">
+   </div>
+</div>
 
-    <!-- E-mail -->
-    <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+<!-- E-mail -->
+<input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
 
-    <!-- Password -->
-    <input type="password" id="defaultRegisterFormPassword" required class="form-control" placeholder="Mot de passe" aria-describedby="defaultRegisterFormPasswordHelpBlock">
-    
+<!-- Password -->
+<input type="password" id="defaultRegisterFormPassword" required class="form-control" placeholder="Mot de passe" aria-describedby="defaultRegisterFormPasswordHelpBlock">
 
-     <!-- Confirm password -->
-    <input type="password" id="defaultConfirmFormPassword" required class="form-control mt-4 mb-4" placeholder="Confirmer mot de passe" aria-describedby="defaultRegisterFormPasswordHelpBlock">
-     
 
-    <!-- Phone number -->
-    <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Numéro de téléphone" aria-describedby="defaultRegisterFormPhoneHelpBlock">
-   
+<!-- Confirm password -->
+<input type="password" id="defaultConfirmFormPassword" required class="form-control mt-4 mb-4" placeholder="Confirmer mot de passe" aria-describedby="defaultRegisterFormPasswordHelpBlock">
 
-  
 
-    <!-- Sign up modal button -->
-    <button class="btn btn-info my-4 btn-block" type="submit">S'inscrire</button>
+<!-- Phone number -->
+<input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Numéro de téléphone" aria-describedby="defaultRegisterFormPhoneHelpBlock">
 
-    <hr>
 
-  </form>
- </div>
- </div> 
-  </div>
-</div>     
+
+
+<!-- Sign up modal button -->
+<button class="btn btn-info my-4 btn-block" type="submit">S'inscrire</button>
+
+<hr>
+
+</form>
+</div>
+</div> 
+</div>
+</div>   
+        </li>
+      </ul>     
 </div>
                 </div>
                 </ul> 
