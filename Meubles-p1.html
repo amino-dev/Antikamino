@@ -23,167 +23,178 @@
 <body>
 
         <!-- Header section start -->
-<header>
-        <div class="container-fluid">
-            <!---------------------------NavBar-------------------------------------->
-            <nav class="navbar navbar-expand-lg navbar-light " id="nav-f">
-               <a class="navbar-brand" href="#">
-          <img src="img/Logo/Antika-Logo-1.png" width="150rem" height="auto" alt="">
-        </a>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link ml-3" href="Acceuil.html">Acceuil
-                <span class="sr-only">(current)</span>
-              </a>
+        <header>
+          <div>
+              <!---------------------------NavBar-------------------------------------->
+              <nav class="navbar navbar-expand-lg navbar-light ">
+                 <a class="navbar-brand mb-2" href="#">
+            <img src="img/Logo/Antika-Logo-1.png" width="150rem" height="auto" alt="">
+          </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link ml-3 lead" href="Acceuil.html">Acceuil
+                  <span class="sr-only">(current)</span>
+                </a>
+          </li>
+            <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle ml-3 down" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Nos produits
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="Arts-décoratifs-p1.html">Arts décoratifs</a>
+            <a class="dropdown-item" href="Anciens-bijoux-p1.html">Anciens bijoux</a>
+            <a class="dropdown-item" href="Meubles-p1.html">Meubles</a>
+            <a class="dropdown-item" href="Scluptures-p1.html">Scluptures</a>
+          </div>
         </li>
-          <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle ml-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Nos produits
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="Arts-décoratifs-p1.html">Arts décoratifs</a>
-          <a class="dropdown-item" href="Anciens-bijoux-p1.html">Anciens bijoux</a>
-          <a class="dropdown-item" href="Meubles-p1.html">Meubles</a>
-          <a class="dropdown-item" href="Scluptures-p1.html">Scluptures</a>
-        </div>
-      </li>
+          <li class="nav-item">
+            <a class="nav-link ml-3 down"  href="Contact.html">Contact</a>
+          </li>
+     
+          
+        
+         
+        <!-- search button -->
         <li class="nav-item">
-          <a class="nav-link ml-3"  href="Contact.html">Contact</a>
-        </li>
-      </ul>
-    
-       
-    <!-- search button -->
-   <div class="col-md-3 col-9">
+          <div class="col-md-12 col-9 pt-1  pb-1 mr-4">
             <form class="navbar-form" role="search">
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Rechercher">
+                    <input type="text" class="form-control searchbox" placeholder="Rechercher">
                     <div class="input-group-btn">
-                        <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+                        <button class="btn btn-default" type="submit"><i class="fas fa-search" id="search"></i></button>
                     </div>
                 </div>
             </form>
-        </div>           
-                
-                  <!-- login button -->
-              <div >
-                   <button class="btn btn-success ml-3  mt-1" data-toggle="modal" data-target="#exampleModal">Se connecter</button>
+        </div> 
+        </li>
+        
+              
+    
+          
+<li class="nav-item">  <!-- login button -->
+  <div class="col-12 d-flex justify-content-sm-center header-right">
+   <button class="btn btn-success  mb-1 mt-0 m mr-0 " data-toggle="modal" data-target="#exampleModal">Connexion</button>
 
-                 <!-- login modal -->
+ <!-- login modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      
-              <!-- Default form login -->
+<div class="modal-dialog">
+<div class="modal-content">
+
+<!-- Default form login -->
 <form class="text-center border border-light p-5" action="#!">
 
-    <p class="h4 mb-4">Se connecter</p>
+<p class="h4 mb-4">Se connecter</p>
 
-    <!-- Email -->
-    <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
+<!-- Email -->
+<input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
 
-    <!-- Password -->
-    <input type="password" id="defaultLoginFormPassword" required class="form-control mb-4" placeholder="Mot de passe">
-    
+<!-- Password -->
+<input type="password" id="defaultLoginFormPassword" required class="form-control mb-4" placeholder="Mot de passe">
 
-    <div class="d-flex justify-content-around">
-        <div>
-            <!-- Remember me -->
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
-                <label class="custom-control-label" for="defaultLoginFormRemember">Souviens moi</label>
-            </div>
-        </div>
-        <div>
-            <!-- Forgot password -->
-            <a href="">Mot de passe oublié?</a>
-        </div>
-    </div>
 
-    <!-- Sign in modal button -->
-    <button class="btn btn-info btn-block my-4" type="submit">Se connecter</button>
+<div class="d-flex justify-content-around">
+<div>
+<!-- Remember me -->
+<div class="custom-control custom-checkbox">
+<input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+<label class="custom-control-label" for="defaultLoginFormRemember">Souviens moi</label>
+</div>
+</div>
+<div>
+<!-- Forgot password -->
+<a href="">Mot de passe oublié?</a>
+</div>
+</div>
 
-    <!-- Register -->
-    <p>Pas un membre?
-        <a href="">S'inscrire</a>
-    </p>
+<!-- Sign in modal button -->
+<button class="btn btn-info btn-block my-4" type="submit">Se connecter</button>
+
+<!-- Register -->
+<p>Pas un membre?
+<a href="">S'inscrire</a>
+</p>
 
 
 </form>
 <!-- Default form login --></div> 
-  </div>
 </div>
- <!-- sign up button-->
-   <button class="btn btn-danger ml-3 mt-1" data-toggle="modal" data-target="#exampleModal1">Inscription</button>
-        
-     <!-- Modal -->
+</div>
+<!-- sign up button-->
+
+<button class="btn btn-danger mb-1 mr-5 ml-0 pr-4-" data-toggle="modal" data-target="#exampleModal1">Inscription</button>
+
+<!-- Modal -->
 <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-         
-          <!-- Default form register -->
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<!-- Default form register -->
 <form class="text-center border border-light p-5" action="#!">
 
-    <p class="h4 mb-4">Inscription</p>
+<p class="h4 mb-4">Inscription</p>
 
-    <div class="form-row mb-4">
-        <div class="col">
-            <!-- First name -->
-            <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Prénom">
-        </div>
-        <div class="col">
-            <!-- Last name -->
-            <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Nom">
-        </div>
-    </div>
-
-    <!-- E-mail -->
-    <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
-
-    <!-- Password -->
-    <input type="password" id="defaultRegisterFormPassword" required class="form-control" placeholder="Mot de passe" aria-describedby="defaultRegisterFormPasswordHelpBlock">
-    
-
-     <!-- Confirm password -->
-    <input type="password" id="defaultConfirmFormPassword" required class="form-control mt-4 mb-4" placeholder="Confirmer mot de passe" aria-describedby="defaultRegisterFormPasswordHelpBlock">
-     
-
-    <!-- Phone number -->
-    <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Numéro de téléphone" aria-describedby="defaultRegisterFormPhoneHelpBlock">
-   
-
-  
-
-    <!-- Sign up modal button -->
-    <button class="btn btn-info my-4 btn-block" type="submit">S'inscrire</button>
-
-    <hr>
-
-  </form>
- </div>
- </div> 
-  </div>
-</div>     
+<div class="form-row mb-4">
+<div class="col">
+<!-- First name -->
+<input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Prénom">
 </div>
-                </div>
-                </ul> 
-              </nav>
-            </div>
-        </div>
-        
-    </header>
+<div class="col">
+<!-- Last name -->
+<input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Nom">
+</div>
+</div>
 
-    <!-- header page end -->
+<!-- E-mail -->
+<input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+<!-- Password -->
+<input type="password" id="defaultRegisterFormPassword" required class="form-control" placeholder="Mot de passe" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+
+
+<!-- Confirm password -->
+<input type="password" id="defaultConfirmFormPassword" required class="form-control mt-4 mb-4" placeholder="Confirmer mot de passe" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+
+
+<!-- Phone number -->
+<input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Numéro de téléphone" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+
+
+
+
+<!-- Sign up modal button -->
+<button class="btn btn-info my-4 btn-block" type="submit">S'inscrire</button>
+
+<hr>
+
+</form>
+
+</div>
+</div> 
+</div>
+</div>
+</li>
+                     
+<li class="nav-item mt-0">
+  <a class="btn btn-link " href="panier.html"><img src="img/Panier-PNG-Fond-Image.png" class="panier-img "></a>
+</li>
+      
+      </ul>
+                     </div>
+                   
+                   </nav>
+            
+         </header>
+            <!-- Header section end -->
 
     <!-- side bar start -->
 
     
-    <div class="container col-md-12 mb-5">
+    <div class="container col-md-12 mb-5 pt-4">
       <div class="row">
         <div class="col-md-3 col-12">
           <div class="card">
@@ -224,7 +235,7 @@
                <dd>
                 <div class="custom-control custom-checkbox mb-5">
                   <input type="checkbox" class="custom-control-input" id="customCheck4">
-                  <label class="custom-control-label" for="customCheck4">Montres</label>
+                  <label class="custom-control-label" for="customCheck4">Armoires</label>
                 </div>
                </dd>
              </dl>
@@ -233,19 +244,19 @@
                <dd>
                <div class="custom-control custom-radio mb-5">
                   <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
-                  <label class="custom-control-label" for="defaultUnchecked">Moins de 500 DT</label>
+                  <label class="custom-control-label" for="defaultUnchecked">Moins de 5000 TND</label>
                </div>
                </dd>
                <dd>
                <div class="custom-control custom-radio mb-5">
                   <input type="radio" class="custom-control-input" id="defaultUnchecked1" name="defaultExampleRadios">
-                  <label class="custom-control-label" for="defaultUnchecked1">Entre 500 et 1000 DT</label>
+                  <label class="custom-control-label" for="defaultUnchecked1">Entre 5000 et 10000 TND</label>
                </div>
                </dd>
                <dd>
                <div class="custom-control custom-radio mb-5">
                   <input type="radio" class="custom-control-input" id="defaultUnchecked2" name="defaultExampleRadios">
-                  <label class="custom-control-label" for="defaultUnchecked2">Plus que 1000 DT</label>
+                  <label class="custom-control-label" for="defaultUnchecked2">Plus que 10000 TND</label>
                </div>
                </dd>
              </dl>
@@ -308,314 +319,321 @@
   <!--  Pagination top end -->
                    <!-- products content start -->
               <div class="container py-3">
-                <div class="card">
+                <div class="card product-card">
                   <div class="row ">
                     <div class="col-md-4">
-                      <img src="img/Meubles/Montres/montre.jpeg" class="w-100">
+                      <img src="img/Meubles/Chaises/chaise1.jpg" class="product-img w-100">
                     </div>
                     <div class="col-md-8 px-3">
                       <div class="card-block px-3">
-                        <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
-                        <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                        <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h4 class="card-title">Une Superbe Grande Chaise Anglaise En Acajou</h4>
+                        <p class="card-text">Une superbe grande chaise Anglaise (de bibliothèque) en acajou, estampillée "VR" (Régime Victorien) . </p>
+                        <p class="card-text">Angleterre c. 1840 .</p>
+                        <p class="card-text">Dimensions: H 94 x W 67 cm x D 75 cm .</p>
                         <div class="contanier">
                           <div class="row mb-3 d-flex justify-content-around">
                             <div>
                               <u class="col-md-4">Disponible</u>
                             </div>
                             <div>
-                              <u class="col-md-4">Prix</u>
+                              <u class="col-md-4">2000 TND</u>
                             </div>
                             <div>
-                              <del class="col-md-4">Prix</del>
+                              <del class="col-md-4">2200 TND</del>
                             </div>
                           </div>
                         </div>
                           <div class="d-flex justify-content-center">
-                              <a href="#" class="btn btn-primary mb-3">Commander</a>
+                              <a href="#" class="btn btn-primary mb-3 mt-3">Ajouter au panier</a>
                            </div>
                     </div>
                   </div>
                   </div>
                 </div>
-                 <div class="card my-4">
+                 <div class="card product-card my-4">
                   <div class="row ">
                     <div class="col-md-4">
-                      <img src="img/Arts décoratifs/Téléphones/téléphone-antique.jpg" class="w-100">
+                      <img src="img/Meubles/Commodes/commode1.jpg" class="product-img w-100">
                     </div>
                     <div class="col-md-8 px-3">
                       <div class="card-block px-3">
-                        <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
-                        <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                        <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h4 class="card-title">Commode Fin 18 ème</h4>
+                        <p class="card-text">Commode pantalonnière fin 18 ème ( Retour d'Egypte) ouvrant à 3 grands tiroirs en façade.Les deux pieds antérieurs symbolisent des griffes de lion, bronzes d'origine en muffles de lion , marbre et clé sont également, d'origine. Bon état. </p>
+                        <p class="card-text">Hauteur : 88 cm. Largeur : 130 cm. Profondeur : 59 cm .</p>
                         <div class="contanier">
                           <div class="row mb-3 d-flex justify-content-around">
                             <div>
                               <u class="col-md-4">Disponible</u>
                             </div>
                             <div>
-                              <u class="col-md-4">Prix</u>
+                              <u class="col-md-4">2000 TND</u>
                             </div>
                             <div>
-                              <del class="col-md-4">Prix</del>
+                              <del class="col-md-4">2150 TND</del>
                             </div>
                           </div>
                         </div>
                           <div class="d-flex justify-content-center">
-                              <a href="#" class="btn btn-primary mb-3">Commander</a>
+                              <a href="#" class="btn btn-primary mb-3 mt-2">Ajouter au panier</a>
                            </div>
                     </div>
                   </div>
                   </div>
                 </div>
-                <div class="card my-4">
+                <div class="card product-card my-4">
                   <div class="row ">
                     <div class="col-md-4">
-                      <img src="img/Arts décoratifs/Boites musicales/Boite-2.jpg" class="w-100">
+                      <img src="img/Meubles/Salons/salon.jpeg" class="product-img w-100">
                     </div>
                     <div class="col-md-8 px-3">
                       <div class="card-block px-3">
-                        <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
-                        <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                        <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h4 class="card-title">Salon Rocaille </h4>
+                        <p class="card-text">Trés beau salon en noyer rocaille .</p>
+                        <p class="card-text"> Trés belle sculpture partiellement doré et tissu en bon état .</p>
+                        <p class="card-text">  Longueur : 120 le canapé 78 le fauteuil et 42 les chaises .</p>
+                        <p class="card-text">   Hauteur : 42 pour les assises et 88 le canapé et 82 fauteuils et chaises .</p>
                         <div class="contanier">
                           <div class="row mb-3 d-flex justify-content-around">
                             <div>
                               <u class="col-md-4">Disponible</u>
                             </div>
                             <div>
-                              <u class="col-md-4">Prix</u>
+                              <u class="col-md-4">4000 TND</u>
                             </div>
                             <div>
-                              <del class="col-md-4">Prix</del>
+                              <del class="col-md-4">4200 TND</del>
                             </div>
                           </div>
                         </div>
                          <div class="d-flex justify-content-center">
-                              <a href="#" class="btn btn-primary mb-3">Commander</a>
+                              <a href="#" class="btn btn-primary mb-3">Ajouter au panier</a>
                            </div>
                     </div>
                   </div>
                   </div>
                 </div>
-                 <div class="card my-4">
+                 <div class="card product-card my-4">
                   <div class="row ">
                     <div class="col-md-4">
-                      <img src="img/Arts décoratifs/Amploules/Ampoule5.jpg" class="w-100">
+                      <img src="img/Meubles/Tables/table.jpg" class="product-img w-100">
                     </div>
                     <div class="col-md-8 px-3">
                       <div class="card-block px-3">
-                        <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
-                        <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                        <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h4 class="card-title">Table De Ferme XIXe Siècle </h4>
+                        <p class="card-text">Pieds cambrés, traverses mouvementées .</p>
+                        <p class="card-text">Deux allonges à l'italienne en chêne, deux tiroirs..</p>
+                        <p class="card-text">Hauteur 79 cm, largeur plateau 167 cm (+2 allonges de 80 cm), profondeur 90 cm. .</p>
                         <div class="contanier">
                           <div class="row mb-3 d-flex justify-content-around">
                             <div>
                               <u class="col-md-4">Disponible</u>
                             </div>
                             <div>
-                              <u class="col-md-4">Prix</u>
+                              <u class="col-md-4">3600 TND</u>
                             </div>
                             <div>
-                              <del class="col-md-4">Prix</del>
+                              <del class="col-md-4">3720 TND</del>
                             </div>
                           </div>
                         </div>
                          <div class="d-flex justify-content-center">
-                              <a href="#" class="btn btn-primary mb-3">Commander</a>
+                              <a href="#" class="btn btn-primary mb-3 mt-3">Ajouter au panier</a>
                            </div>
                     </div>
                   </div>
                   </div>
                 </div>
-                 <div class="card my-4">
+                 <div class="card product-card my-4">
                   <div class="row ">
                     <div class="col-md-4">
-                      <img src="img/Arts décoratifs/Boites musicales/Boite5.jpg" class="w-100">
+                      <img src="img/Meubles/Commodes/commode2.jpg" class="product-img w-100">
                     </div>
                     <div class="col-md-8 px-3">
                       <div class="card-block px-3">
-                        <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
-                        <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                        <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h4 class="card-title"> Commode Arbalète En Noyer Louis XIV</h4>
+                        <p class="card-text">Garnitures en fer d'origine . </p>
+                        <p class="card-text">Largeur : 133,5cm .</p>
+                        <p class="card-text">Hauteur : 83cm . </p>
+                        <p class="card-text"> Profondeur : 71cm .</p>
                         <div class="contanier">
                           <div class="row mb-3 d-flex justify-content-around">
                             <div>
                               <u class="col-md-4">Disponible</u>
                             </div>
                             <div>
-                              <u class="col-md-4">Prix</u>
+                              <u class="col-md-4">10000 TND</u>
                             </div>
                             <div>
-                              <del class="col-md-4">Prix</del>
+                              <del class="col-md-4">10200 TND</del>
                             </div>
                           </div>
                         </div>
                           <div class="d-flex justify-content-center">
-                              <a href="#" class="btn btn-primary mb-3">Commander</a>
+                              <a href="#" class="btn btn-primary mb-3">Ajouter au panier</a>
                            </div>
                     </div>
                   </div>
                   </div>
                 </div>
-                 <div class="card my-4">
+                 <div class="card product-card my-4">
                   <div class="row ">
                     <div class="col-md-4">
-                      <img src="img/Arts décoratifs/Amploules/Pack-Deux-Lampes-Antiques-Vintages-LED-ST64 - 4W - E27.jpg" class="w-100">
+                      <img src="img/Meubles/Armoires/armoire1.jpg" class="product-img w-100">
                     </div>
                     <div class="col-md-8 px-3">
                       <div class="card-block px-3">
-                        <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
-                        <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                        <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h4 class="card-title">Armoire Provençale</h4>
+                        <p class="card-text">Armoire en noyer massif , provençale à chapeau de gendarme et traverse ajourée du XVIIIeme époque .</p>
+                        <p class="card-text">En bel état de maison, ce meuble de plus de 200 ans a quelques traces de ses vies passées ( quelques petits manques , un intérieur recouvert de différents tissus à enlever ou à remplacer ) .</p>
                         <div class="contanier">
                           <div class="row mb-3 d-flex justify-content-around">
                             <div>
                               <u class="col-md-4">Disponible</u>
                             </div>
                             <div>
-                              <u class="col-md-4">Prix</u>
+                              <u class="col-md-4">12000 TND</u>
                             </div>
                             <div>
-                              <del class="col-md-4">Prix</del>
+                              <del class="col-md-4">12500 TND</del>
                             </div>
                           </div>
                         </div>
                       <div class="d-flex justify-content-center">
-                              <a href="#" class="btn btn-primary mb-3">Commander</a>
+                              <a href="#" class="btn btn-primary mb-3 mt-3">Ajouter au panier</a>
                            </div>
                     </div>
                   </div>
                   </div>
                 </div>
               </div>
+
+      <!--  Pagination bottom start -->
+   
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">Précédent</a>
+          </li>
+          <li class="page-item active"><a class="page-link" href="Meubles-p1.html">1</a></li>
+          <li class="page-item"><a class="page-link" href="Meubles-p2.html">2</a></li>
+          <li class="page-item"><a class="page-link" href="Meubles-p3.html">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="Meubles-p2.html">Suivant</a>
+          </li>
+        </ul>
+      </nav>
+         
+     <!--  Pagination bottom end -->
         </div>
         </div>
       </div>
     </div>
       <!-- Products content end -->
     
-      <!--  Pagination bottom start -->
-         <div class="container">
-   <div class="col-md-9 d-flex justify-content-end">
-    <nav aria-label="Page navigation example">
-      <ul class="pagination justify-content-center">
-        <li class="page-item disabled">
-          <a class="page-link" href="#" tabindex="-1">Précédent</a>
-        </li>
-        <li class="page-item active"><a class="page-link" href="Meubles-p1.html">1</a></li>
-        <li class="page-item"><a class="page-link" href="Meubles-p2.html">2</a></li>
-        <li class="page-item"><a class="page-link" href="Meubles-p3.html">3</a></li>
-        <li class="page-item">
-          <a class="page-link" href="Meubles-p2.html">Suivant</a>
-        </li>
-      </ul>
-    </nav>
-</div>
-         </div>
-         
-     <!--  Pagination bottom end -->
+  <!-- Footer section start -->
+    <footer class="footer">
+      <div class="footer-top">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-md-3">
+                      <div class="footer-widget">
+                          <h3 class="footer-title mt-4 mb-4">
+                              Antikamino
+                          </h3>
+                          <p> Nous vivons dans l'ére du numérique maintenant.</p>
+                          <p>C'est pour cela, Antikamino vous offre l'occasion d'acheter tout ce que vous voulez sans se déplacer sur place.</p>
+                      </div>
+                  </div>
+                  <div class="col-md-1">
+                    
+                  </div>
+                   <div class="col-md-2">
+                      <div class="footer-widget">
+                          <h3 class="footer-title mt-4 mb-0">
+                              Adresse
+                          </h3>
+                          <p class="footer-text"> <br>
+                              Sfax - Tunisie</p>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="footer-widget">
+                          <h3 class="footer-title mt-4 mb-4">
+                              Navigation
+                          </h3>
+                          <dl>
+                             <dd><a  class="footer-link" href="Acceuil.html">Acceuil</a></dd>
+                             <dd><a class="footer-link" href="Arts-décoratifs-p1.html">Arts décoratifs</a></dd>
+                             <dd><a class="footer-link" href="Anciens-bijoux-p1.html">Anciens bijoux</a></dd>
+                             <dd><a class="footer-link" href="Meubles-p1.html">Meubles</a></dd>
+                             <dd><a class="footer-link" href="Scluptures-p1.html">Scluptures</a></dd>
+                             <dd><a class="footer-link" href="contact.html">Contact</a></dd>
+                             <dd>  <a class="btn btn-link " href="panier.html"><img src="img/Panier-PNG-Fond-Image.png" class="panier-img "></a></dd>
+                        
+                          </dl>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="footer-widget">
+                          <h3 class="footer-title mt-4 mb-4">
+                              Newsletter
+                          </h3>
+                          <div class="content">
+                            <form>
+                               
+                                <div class="input-group">
+                                    <input type="email" class="form-control" placeholder="Votre mail">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-primary Rejoindre" type="submit">S'abonner</button>
+                                    </span>
+          
+                                    <p class="footer-subscribe-text mt-4">S'abonner à notre newsletter<p>
+                                </div>
+                            </form>
+                        </div>
+                            </div>
+                            <div class="container-fluid text-center mt-4">
+                              <div class="row">
+                                <div class="col-md-4">
+                                 <a href="https://fr-fr.facebook.com/" target="_blank"><i class="fab fa-facebook social-icon"></i></a>
+                            
+                                </div>
+                                <div class="col-md-4">
+                                  <a href="https://www.instagram.com/?hl=fr"  target="_blank"><i class="fab fa-instagram social-icon"></i></a>		
+                                
+                                </div>
+                                <div class="col-md-4">
+                                  <a href="https://www.twitter.com/"  target="_blank"><i class="fab fa-twitter social-icon"></i></a>
+                                </div>
+   
+                              </div>
+                            </div>
+                           
 
-    
-
-
-    
-
-    <!-- Footer section -->
-<footer class="footer-section mt-5">
-  <div class="container-fluid w-100">
-      <div class="row">
-          <div class="col-md-3">
-              <div class="footer-widget">
-                    <h3 class="footer-title mb-4">Antikamino</h3>
-                  <div class="info-footer">
-        <p> Nous vivons dans l'ére du numérique maintenant.</p>
-        <p>C'est pour cela, Antikamino vous offre l'occasion d'acheter tout ce que vous voulez sans se déplacer sur place.</p>
+                          </div>
+                         
+                      </div>
                   </div>
               </div>
           </div>
-          <div class="col-md-2">
-
-  </div>
-          <div class="col-md-3 col-6">
-    <div class="footer-widget">
-      <h3 class="footer-title mb-4">
-          Navigation
-      </h3>
-      <dl>
-          <dd><a  class="footer-link" href="Acceuil.html">Acceuil</a></dd>
-          <dd><a class="footer-link" href="Arts-décoratifs-p1.html">Arts décoratifs</a></dd>
-          <dd><a class="footer-link" href="Anciens-bijoux-p1.html">Anciens bijoux</a></dd>
-          <dd><a class="footer-link" href="Meubles-p1.html">Meubles</a></dd>
-          <dd><a class="footer-link" href="Scluptures-p1.html">Scluptures</a></dd>
-          <dd><a class="footer-link" href="contact.html">Contact</a></dd>
-      </dl>
-  </div>
-  </div>
-  
-          <div class="col-md-4">
-              <div class="footer-widget">
-                  <h3 class="footer-title mb-4">Informations de contact</h3>
-                  <dl class="info-footer">
-                      <dd>
-                        <div class="container-fluid">
-                          <div class="row">
-                            <div class="col-md-6 col-5">
-                              <i class="fa fa-phone"></i>
-                              <span class="footer-tool">Tél</span>
-                            </div>
-                            <div class="col-md-6 col-7">
-                              <span class="footer-contact">22.917.360</span>
-                            </div>
-                          </div>
-                        </div>
-                      </dd>
-                      <dd>
-                        <div class="container-fluid">
-                          <div class="row">
-                            <div class="col-md-6 col-5">
-                              <i class="fa fa-envelope"></i>
-                              <span class="footer-tool">Email</span>
-                            </div>
-                            <div class="col-md-6 col-7">
-                              <span class="footer-contact">samet.amine@yahoo.fr</span>
-                            </div>
-                          </div>
-                        </div>
-                      </dd>
-                      <dd>
-                        <div class="container-fluid">
-                          <div class="row">
-                            <div class="col-md-6 col-5">
-                              <i class="fa fa-map-marker"></i>
-                          <span class="footer-tool" >Adresse</span>
-                            </div>
-                            <div class="col-md-6 col-7">
-                               
-                          <span class="footer-contact">Sfax (Tunisie)</span>
-                            </div>
-                          </div>
-                        </div>
-                      </dd>
-                  </dl>
-              </div>
-          </div>
       </div>
-  </div>
-
-   <div class="container col-md-3">
-    <div class="row d-flex justify-content-around mt-3">
-      <a href="https://fr-fr.facebook.com/" target="_blank"><i class="fab fa-facebook social-icon"></i></a>
-      <a href="https://www.instagram.com/?hl=fr"  target="_blank"><i class="fab fa-instagram social-icon"></i></a>			
-      <a href="https://www.twitter.com/"  target="_blank"><i class="fab fa-twitter social-icon"></i></a>
-      <a href="https://www.pinterest.com/"  target="_blank"><i class="fab fa-pinterest social-icon"></i></a>
-    </div>
-    <p class="copy-right text-center mt-5">
+      <div class="copy-right-text">
+        <div class="footer-border"></div>
+            <div class="container-fluid">
+          <div class="row">
+            </div>
+    <p class="copy-right text-center copyright mt-4">
       <i class="far fa-copyright" aria-hidden="true"></i> 2020 All rights reserved by Amino
     </p>
   </div>
-</footer>
-<!-- Footer section end -->
+          </div>
+        </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer section end -->
+
    
     	<!--====== Javascripts & Jquery ======-->
 	<script src="js/bootstrap.bundle.js"></script>

@@ -35,16 +35,25 @@ body {
 
 .card-img-top:hover {
   transform: scale(1.1);
-}
-
-.feedbakcs-section .container {
-  border: 1px solid gray;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
 }
 
 .customer {
   width: 20%;
   height: 20%;
   clip-path: circle(42% at 50% 50%);
+}
+
+#myCarousel {
+  background-image: url(https://image.freepik.com/photos-gratuite/cadre-frontiere-vignette-sombre-abstrait-fond-texture-gris-style-fond-grunge-vintage_64749-2592.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.feedbacks-text {
+  color: white;
+  opacity: 0.7;
 }
 
 /*----------------------------------------*/
@@ -72,6 +81,10 @@ footer {
 
 .social-icon {
   transform: scale(2);
+}
+
+.copyright {
+  color: rosybrown;
 }
 
 /*----------------------------------------*/
@@ -134,16 +147,15 @@ footer {
 }
 
 .btn-success {
-  margin-right: -15px;
   background-color: #11556c;
+  transform: scale(0.9);
   position: relative;
-  right: 40px;
+  right: 9px;
 }
 
 .btn-danger {
   background-color: #ea1e63;
-  position: relative;
-  right: 40px;
+  transform: scale(0.9);
 }
 
 .btn-search:hover {
@@ -200,24 +212,47 @@ footer {
 
 .title {
   font-size: 50px;
-  margin-bottom: 40px;
-  text-decoration: underline;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  border: 2px solid #ea1e63;
 }
 
-.product-card {
-  box-shadow: 3px 2px 3px 2px #8f9091;
+.card {
+  box-shadow: 0 3px 10px #c4893c;
+  overflow: hidden;
 }
 
 .card-title {
-  color: #ea1e63;
+  background-color: rgba(196, 137, 60, 0.2);
+  color: #232323;
   text-align: center;
 }
 
 .panier-img {
   height: 2rem;
   width: 2rem;
+  margin-top: -5px;
+}
+.panier-img:hover {
+  transform: rotateY(180deg) translateX(50px);
+  transition: all 1s ease-in;
+}
+
+.price {
+  border-radius: 30px;
+  background-color: rgba(196, 137, 60, 0.8);
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.brown {
+  background-image: radial-gradient(#fff, #c4893c);
 }
 
 .quantity {
   width: 15%;
+}
+
+.Rejoindre {
+  height: 85%;
 }
