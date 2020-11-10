@@ -19,14 +19,9 @@
 	<!-- Main Stylesheets -->
     <link rel="stylesheet" href="css/style.css"/>
     
-
-
 </head>
 <body>
   
-
-
-       
         <!-- Header section start -->
         <header>
           <div>
@@ -83,7 +78,7 @@
           
 <li class="nav-item"> 
   <div class="col-12 d-flex justify-content-sm-center header-right">
-   <button class="btn btn-success  mb-1 mt-0 m mr-0 " data-toggle="modal" data-target="#exampleModal">Connexion</button>
+   <button class="btn btn-connexion  mb-1 mt-0 m mr-0 " data-toggle="modal" data-target="#exampleModal">Connexion</button>
 
  <!-- login modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -131,7 +126,7 @@
 </div>
 <!-- sign up button-->
 
-<button class="btn btn-danger mb-1 mr-5 ml-0 pr-4-" data-toggle="modal" data-target="#exampleModal1">Inscription</button>
+<button class="btn btn-inscription mb-1 mr-5 ml-0 pr-4-" data-toggle="modal" data-target="#exampleModal1">Inscription</button>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -185,7 +180,7 @@
 </li>
                      
 <li class="nav-item mt-0">
-  <a class="btn btn-link panierhover" href="panier.html"><img src="img/Panier-PNG-Fond-Image.png" class="panier-img"></a>
+  <a class="btn btn-link " href="panier.html"><img src="img/Panier-PNG-Fond-Image.png" class="panier-img"></a>
 </li>
       
       </ul>
@@ -200,7 +195,7 @@
          
  <div class="top">
   <img class="img-responsive w-100" src="img/Acceuil/slider.jpg">
-  <h1 class="text-center col-md-9 col-9 float-right  "><span class="prim-color col-12">L'antiquité </span>est l'aristocratie de <span class="second-color col-12">l'histoire</span> </h1>
+  <h1 class="text-center col-md-9 col-9  float-right  "><span class="prim-color col-12">L'antiquité </span>est l'aristocratie de <span class="second-color col-12">l'histoire</span> </h1>
    </div>
   
  <!-- top page end -->
@@ -217,7 +212,7 @@
 <div class="container">
 
  <div class="card-deck">
-<div class="card">
+<div class="card product-card">
   <img src="img/Acceuil/Les-nouveautés/boite-bijoux.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Boite de bijoux à musique sous forme de téléphone antique</h5>
@@ -225,9 +220,17 @@
     <div class="text-center">
       <u class="col-md-4 price">3000 TND</u>
     </div>
+      <div class="d-flex justify-content-center">
+          <a href="#" class="btn  mt-3 mb-3" onclick="myFunction()">Ajouter au panier</a>
+          <script>
+            function myFunction() {
+            alert("Produit ajouté avec succés au panier");
+                                  }
+          </script>   
+      </div>
   </div>
 </div>
-<div class="card">
+<div class="card product-card">
   <img src="img/Acceuil/Les-nouveautés/Boite8.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h4 class="card-title">Boite à musique ancienne</h4>
@@ -235,16 +238,32 @@
     <p class="card-text"> Pas difficile : la manivelle est facile à déplacer et les enfants peuvent faire facilement .</p>
     <div class="text-center">
       <u class="col-md-4 price">3200 TND</u>
+        <div class="d-flex justify-content-center">
+          <a href="#" class="btn  mt-3 mb-3" onclick="myFunction()">Ajouter au panier</a>
+          <script>
+            function myFunction() {
+            alert("Produit ajouté avec succés au panier");
+                                  }
+          </script>   
+      </div>
     </div>
   </div>
 </div>
-<div class="card">
+<div class="card product-card">
   <img src="img/Acceuil/Les-nouveautés/boucle2.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h4 class="card-title"> Boucles d'Oreilles En Or Blanc Avec Saphirs Bleus Et Diamants</h4>
     <p class="card-text">Boucles d'oreilles en or blanc avec un saphir bleu naturel au milieu et décorées de diamants dans un cercle. Environ 0.12 carats de diamant et saphir bleu.</p>
     <div class="text-center">
       <u class="col-md-4 price">2500 TND</u>
+        <div class="d-flex justify-content-center">
+          <a href="#" class="btn   mt-3 mb-3" onclick="myFunction()">Ajouter au panier</a>
+          <script>
+            function myFunction() {
+            alert("Produit ajouté avec succés au panier");
+                                  }
+          </script>   
+      </div>
     </div>
   </div>
 </div>
@@ -261,7 +280,7 @@
 <div class="container">
 
  <div class="card-deck">
-<div class="card">
+<div class="card product-card">
   <img src="img/Acceuil/Promotions/bague4.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h4 class="card-title">Bague Or Et Platine Diamants </h4>
@@ -275,9 +294,17 @@
         <del class="price">2000 TND</del>
       </div>
     </div>
+    <div class="d-flex justify-content-center">
+          <a href="#" class="btn mt-3 mb-3" onclick="myFunction()">Ajouter au panier</a>
+          <script>
+            function myFunction() {
+            alert("Produit ajouté avec succés au panier");
+                                  }
+          </script>   
+      </div>
   </div>
 </div>
-<div class="card">
+<div class="card product-card">
   <img src="img/Acceuil/Promotions/bracelet4.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h4 class="card-title">Bracelet De Bras - Or -96.50 G</h4>
@@ -291,14 +318,22 @@
         <del class="price">1750 TND</del>
       </div>
     </div>
+     <div class="d-flex justify-content-center">
+          <a href="#" class="btn   mt-3 mb-3" onclick="myFunction()">Ajouter au panier</a>
+          <script>
+            function myFunction() {
+            alert("Produit ajouté avec succés au panier");
+                                  }
+          </script>   
+      </div>
   </div>
 </div>
-<div class="card">
+<div class="card product-card">
   <img src="img/Acceuil/Promotions/bague2.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h4 class="card-title">Bague Entourage émeraude Et Diamants</h4>
-                        <p class="card-text">Epoque : 20ème siècle </p>
-                        <p class="card-text">Le plateau serti de diamants a été rhodié Emeraude ovale de 5,87 carats dans un entourage de 18 diamants de taille moderne (brillants) pour 0,70 carat environ l'ensemble.</p>
+      <p class="card-text">Epoque : 20ème siècle </p>
+     <p class="card-text">Le plateau serti de diamants a été rhodié Emeraude ovale de 5,87 carats dans un entourage de 18 diamants de taille moderne (brillants) pour 0,70 carat environ l'ensemble.</p>
     <div class="d-flex justify-content-between">
       <div class="mt-4">
         <u class="price">1500 TND</u>
@@ -307,6 +342,14 @@
         <del class="price">1750 TND</del>
       </div>
     </div>
+      <div class="d-flex justify-content-center">
+          <a href="#" class="btn mt-3 mb-3" onclick="myFunction()">Ajouter au panier</a>
+          <script>
+            function myFunction() {
+            alert("Produit ajouté avec succés au panier");
+                                  }
+          </script>   
+      </div>
   </div>
 </div>
 </div>
@@ -321,19 +364,26 @@
 <div class="container">
 
  <div class="card-deck">
-<div class="card">
+<div class="card product-card">
   <img src="img/Acceuil/Plus-vendus/panthére2.jpg" class="card-img-top" alt="...">
   <div class="card-body">
-    <p class="card-title">Lot de 2 statues de panthères, en céramique noire. Hauteur et longueur 33 cm </p>
+    <h4 class="card-title">Lot de 2 statues de panthères, en céramique noire. Hauteur et longueur 33 cm </h4>
     <p class="card-text">Dimension (cm): 	De 10 à 30 .</p>
     <p class="card-text">Matière: Céramique .</p>
-    <p class="card-text">Marque: Laure TERRIER .</p>
     <div class="text-center">
       <u class="col-md-4 price">1100 TND</u>
     </div>
+      <div class="d-flex justify-content-center">
+          <a href="#" class="btn  mt-3 mb-3" onclick="myFunction()">Ajouter au panier</a>
+          <script>
+            function myFunction() {
+            alert("Produit ajouté avec succés au panier");
+                                  }
+          </script>   
+      </div>
   </div>
 </div>
-<div class="card">
+<div class="card product-card">
   <img src="img/Acceuil/Plus-vendus/buffet.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h4 class="card-title">Ancien Buffet en noyer et marqueterie - 19ème siècle </h4>
@@ -343,10 +393,18 @@
     <div class="text-center">
      <u class="col-md-4 price">5000 TND</u>
    </div>
+     <div class="d-flex justify-content-center">
+          <a href="#" class="btn   mt-3 mb-3" onclick="myFunction()">Ajouter au panier</a>
+          <script>
+            function myFunction() {
+            alert("Produit ajouté avec succés au panier");
+                                  }
+          </script>   
+      </div>
    
   </div>
 </div>
-<div class="card">
+<div class="card product-card">
   <img src="img/Acceuil/Plus-vendus/paon1.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h4 class="card-title">Représentation Du PAON En LAITON Avec Plume Sur La Tête (Longueur 18 cm , queue de 10 cm)</h4>
@@ -354,6 +412,14 @@
     <div class="text-center">
       <u class="col-md-4 price">250 TND</u>
     </div>
+      <div class="d-flex justify-content-center">
+          <a href="#" class="btn  mt-3 mb-3" onclick="myFunction()">Ajouter au panier</a>
+          <script>
+            function myFunction() {
+            alert("Produit ajouté avec succés au panier");
+                                  }
+          </script>   
+      </div>
   </div>
 </div>
 </div>
@@ -362,7 +428,7 @@
 
 
 <!-- Description start -->
-<div class="container brown">
+<div class="container background">
     <h2 class="text-center mt-5">Antikamino : De la commande en ligne à la réception de vos produits</h2>
     <h4 class="text-center mt-5">Vous avez choisi de faire livrer votre commande à domicile ou sur votre lieu de travail,
         Antikamino vous assure la livraison de vos produits dans les plus brefs délais.</h4>
@@ -413,7 +479,7 @@
           <img class="card-img-top customer mt-3" src="img/Clients/Hakim.png" alt="">          
         </div>
         <div class="card-body feedbacks-text">
-          <h4 class="card-title-1 text-center">Haythem Saidi</h4>
+          <h4 class="card-title-1 text-center">Hakim Hizi</h4>
           <p class="card-text-1 text-center">"Grâce à vous je vais éviter les longs voyages pour visiter des magasins d’antiquités qui sont éloignés.  </p>
         </div>
       </div>
@@ -492,8 +558,6 @@
                              <dd><a class="footer-link" href="Meubles-p1.html">Meubles</a></dd>
                              <dd><a class="footer-link" href="Scluptures-p1.html">Scluptures</a></dd>
                              <dd><a class="footer-link" href="contact.html">Contact</a></dd>
-                             <dd>  <a class="btn btn-link " href="panier.html"><img src="img/Panier-PNG-Fond-Image.png" class="panier-img "></a></dd>
-                        
                           </dl>
                       </div>
                   </div>
@@ -508,7 +572,7 @@
                                 <div class="input-group">
                                     <input type="email" class="form-control" placeholder="Votre mail">
                                     <span class="input-group-btn">
-                                        <button class="btn btn-primary Rejoindre" type="submit">S'abonner</button>
+                                        <button class="btn Rejoindre" type="submit">S'abonner</button>
                                     </span>
           
                                     <p class="footer-subscribe-text mt-4">S'abonner à notre newsletter<p>
@@ -518,15 +582,15 @@
                             </div>
                             <div class="container-fluid text-center mt-4">
                               <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-4">
                                  <a href="https://fr-fr.facebook.com/" target="_blank"><i class="fab fa-facebook social-icon"></i></a>
                             
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-4">
                                   <a href="https://www.instagram.com/?hl=fr"  target="_blank"><i class="fab fa-instagram social-icon"></i></a>		
                                 
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-4">
                                   <a href="https://www.twitter.com/"  target="_blank"><i class="fab fa-twitter social-icon"></i></a>
                                 </div>
    

@@ -78,7 +78,7 @@
           
 <li class="nav-item">  <!-- login button -->
   <div class="col-12 d-flex justify-content-sm-center header-right">
-   <button class="btn btn-success  mb-1 mt-0 m mr-0 " data-toggle="modal" data-target="#exampleModal">Connexion</button>
+   <button class="btn btn-connexion  mb-1 mt-0 m mr-0 " data-toggle="modal" data-target="#exampleModal">Connexion</button>
 
  <!-- login modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -126,7 +126,7 @@
 </div>
 <!-- sign up button-->
 
-<button class="btn btn-danger mb-1 mr-5 ml-0 pr-4-" data-toggle="modal" data-target="#exampleModal1">Inscription</button>
+<button class="btn btn-inscription mb-1 mr-5 ml-0 pr-4-" data-toggle="modal" data-target="#exampleModal1">Inscription</button>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -259,13 +259,13 @@
                <dd>
                <div class="custom-control custom-radio mb-5">
                   <input type="radio" class="custom-control-input" id="defaultUnchecked1" name="defaultExampleRadios">
-                  <label class="custom-control-label" for="defaultUnchecked1">Entre 1000 et 2000 TND/label>
+                  <label class="custom-control-label" for="defaultUnchecked1">Entre 1000 et 2000 <TND/label>
                </div>
                </dd>
                <dd>
                <div class="custom-control custom-radio mb-5">
                   <input type="radio" class="custom-control-input" id="defaultUnchecked2" name="defaultExampleRadios">
-                  <label class="custom-control-label" for="defaultUnchecked2">Entre 2000 et 3000 TND/label>
+                  <label class="custom-control-label" for="defaultUnchecked2">Entre 2000 et 3000 <TND/label>
                </div>
                </dd>
                <dd>
@@ -355,19 +355,24 @@
                         <div class="contanier">
                           <div class="row mb-3 d-flex justify-content-around">
                             <div>
-                              <u class="col-md-4 col-6">Disponible</u>
+                              <u class="col-md-4 col-6 stock">Disponible</u>
                             </div>
                             <div>
-                              <u class="col-md-4 col-6">1500 TND</u>
+                              <u class="col-md-4 col-6 price ">1500 TND</u>
                             </div>
                             <div>
-                              <del class="col-md-4 col-12">1750 TND</del>
+                              <del class="col-md-4 col-12 price">1750 TND</del>
                             </div>
                           </div>
                         </div>
-                           <div class="d-flex justify-content-center">
-                              <a href="#" class="btn btn-primary mt-4 mb-3">Commander</a>
-                           </div>
+                        <div class="d-flex justify-content-center">
+                          <a href="#" class="btn  mt-4 mb-3" onclick="myFunction()">Ajouter au panier</a>
+                          <script>
+                            function myFunction() {
+                              alert("Produit ajouté avec succés au panier");
+                            }
+                            </script>   
+                        </div>
                     </div>
                   </div>
                   </div>
@@ -385,20 +390,25 @@
                         <div class="contanier">
                           <div class="row mb-3 d-flex justify-content-around">
                             <div>
-                              <u class="col-md-4 col-6">Disponible</u>
+                              <u class="col-md-4 col-6 stock">Disponible</u>
                             </div>
                             <div>
-                              <u class="col-md-4 col-6">12000 TND</u>
+                              <u class="col-md-4 col-6 price">12000 TND</u>
                             </div>
                             <div>
-                              <del class="col-md-4 col-12">13500 TND</del>
+                              <del class="col-md-4 col-12 price">13500 TND</del>
                             </div>
                           </div>
                         </div>
                         </div>
                            <div class="d-flex justify-content-center">
-                              <a href="#" class="btn btn-primary mt-4 mb-3">Commander</a>
-                           </div>
+                              <a href="#" class="btn  mt-4 mb-3" onclick="myFunction()">Ajouter au panier</a>
+                              <script>
+                                function myFunction() {
+                                  alert("Produit ajouté avec succés au panier");
+                                }
+                                </script>   
+                            </div>
                     </div>
                   </div>
                   </div>
@@ -415,19 +425,24 @@
                         <div class="contanier">
                           <div class="row mb-3 d-flex justify-content-around">
                             <div>
-                              <u class="col-md-4 col-6">Disponible</u>
+                              <u class="col-md-4 col-6 stock">Disponible</u>
                             </div>
                             <div>
-                              <u class="col-md-4 col-6">4300 TND</u>
+                              <u class="col-md-4 col-6 price">4300 TND</u>
                             </div>
                             <div>
-                              <del class="col-md-4 col-12">5000 TND</del>
+                              <del class="col-md-4 col-12 price">5000 TND</del>
                             </div>
                           </div>
                         </div>
-                          <div class="d-flex justify-content-center">
-                              <a href="#" class="btn btn-primary mt-4 mb-3">Commander</a>
-                           </div>
+                        <div class="d-flex justify-content-center">
+                          <a href="#" class="btn  mt-4 mb-3" onclick="myFunction()">Ajouter au panier</a>
+                          <script>
+                            function myFunction() {
+                              alert("Produit ajouté avec succés au panier");
+                            }
+                            </script>   
+                        </div>
                     </div>
                   </div>
                   </div>
@@ -445,20 +460,25 @@
                         <div class="contanier">
                           <div class="row mb-3 d-flex justify-content-around">
                             <div>
-                              <u class="col-md-4 col-6">Disponible</u>
+                              <u class="col-md-4 col-6 stock">Disponible</u>
                             </div>
                             <div>
-                              <u class="col-md-4 col-6">5700 TND
+                              <u class="col-md-4 col-6 price">5700 TND
                               </u>
                             </div>
                             <div>
-                              <del class="col-md-4 col-12">6200 TND</del>
+                              <del class="col-md-4 col-12 price">6200 TND</del>
                             </div>
                           </div>
                         </div>
-                         <div class="d-flex justify-content-center">
-                              <a href="#" class="btn btn-primary mt-5 mb-3">Commander</a>
-                           </div>
+                        <div class="d-flex justify-content-center">
+                          <a href="#" class="btn  mt-4 mb-3" onclick="myFunction()">Ajouter au panier</a>
+                          <script>
+                            function myFunction() {
+                              alert("Produit ajouté avec succés au panier");
+                            }
+                            </script>   
+                        </div>
                     </div>
                   </div>
                   </div>
@@ -476,19 +496,24 @@
                         <div class="contanier">
                           <div class="row mb-3 d-flex justify-content-around">
                             <div>
-                              <u class="col-md-4 col-6">Disponible</u>
+                              <u class="col-md-4 col-6 stock">Disponible</u>
                             </div>
                             <div>
-                              <u class="col-md-4 col-6">1850 TND</u>
+                              <u class="col-md-4 col-6 price">1850 TND</u>
                             </div>
                             <div>
-                              <del class="col-md-4 col-12">2000 TND</del>
+                              <del class="col-md-4 col-12 price">2000 TND</del>
                             </div>
                           </div>
                         </div>
-                       <div class="d-flex justify-content-center">
-                              <a href="#" class="btn btn-primary mt-4 mb-3">Commander</a>
-                           </div>
+                        <div class="d-flex justify-content-center">
+                          <a href="#" class="btn mt-4 mb-3" onclick="myFunction()">Ajouter au panier</a>
+                          <script>
+                            function myFunction() {
+                              alert("Produit ajouté avec succés au panier");
+                            }
+                            </script>   
+                        </div>
                     </div>
                   </div>
                   </div>
@@ -521,19 +546,24 @@
                         <div class="contanier">
                           <div class="row mb-3 d-flex justify-content-around">
                             <div>
-                              <u class="col-md-4 col-6">Disponible</u>
+                              <u class="col-md-4 col-6 stock">Disponible</u>
                             </div>
                             <div>
-                              <u class="col-md-4 col-6">2500 TND</u>
+                              <u class="col-md-4 col-6 price">2500 TND</u>
                             </div>
                             <div>
-                              <del class="col-md-4 col-12">2800 TND</del>
+                              <del class="col-md-4 col-12 price">2800 TND</del>
                             </div>
                           </div>
                         </div>
-                         <div class="d-flex justify-content-center">
-                              <a href="#" class="btn btn-primary mt-3 mb-3">Commander</a>
-                         </div>
+                        <div class="d-flex justify-content-center">
+                          <a href="#" class="btn  mt-3 mb-3" onclick="myFunction()">Ajouter au panier</a>
+                          <script>
+                            function myFunction() {
+                              alert("Produit ajouté avec succés au panier");
+                            }
+                            </script>   
+                        </div>
                     </div>
                   </div>
                   </div>
@@ -602,9 +632,7 @@
                              <dd><a class="footer-link" href="Anciens-bijoux-p1.html">Anciens bijoux</a></dd>
                              <dd><a class="footer-link" href="Meubles-p1.html">Meubles</a></dd>
                              <dd><a class="footer-link" href="Scluptures-p1.html">Scluptures</a></dd>
-                             <dd><a class="footer-link" href="contact.html">Contact</a></dd>
-                             <dd>  <a class="btn btn-link " href="panier.html"><img src="img/Panier-PNG-Fond-Image.png" class="panier-img "></a></dd>
-                        
+                             <dd><a class="footer-link" href="Contact.html">Contact</a></dd>
                           </dl>
                       </div>
                   </div>
@@ -619,7 +647,7 @@
                                 <div class="input-group">
                                     <input type="email" class="form-control" placeholder="Votre mail">
                                     <span class="input-group-btn">
-                                        <button class="btn btn-primary Rejoindre" type="submit">S'abonner</button>
+                                        <button class="btn  Rejoindre" type="submit">S'abonner</button>
                                     </span>
           
                                     <p class="footer-subscribe-text mt-4">S'abonner à notre newsletter<p>
